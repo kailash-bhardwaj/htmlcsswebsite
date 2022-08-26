@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+body {font-family: 'Open Sans', sans-serif; color:#323131;}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1000px;
+}
+}
+/*********** Global style ***************/
+h1 {    font-size: 1.8rem; font-weight: 700;}
+li {margin-bottom:10px;}
+/*.navbar {    padding: .5rem 8rem;}*/
+.btn {border-radius: 5rem;}
+.fa{ margin:0  0.2rem;}
+.content {width:100%;}
+.form-control {  height: calc(1.5em + .75rem + 5px);     border: 1px solid #bdbdbd;}
+form button, form .btn {width:100%;}
+.form-check-label {font-size: 0.8rem;}
+.register-btn:focus, .register-btn:hover  { box-shadow: 1px 0px 7px #1ec2f3;}
+	
+/****************Header*******************/
+.top-header {border-bottom:1px solid #eeeeee;}
+.top-header a {color: #272a2b; text-transform: uppercase;padding: 0 10px;font-size: 13px;}
+.top-header a:last-child {padding:0;}
+.top-header a:first-child::after {content: "|"; margin-left:10px; color:#cacfd1;}
+.top-header a:hover {color:#1ec2f3; text-decoration:none;}
+.navbar {padding-bottom:0;}
+.topmenu-space{padding:0 20px;}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+/*   padding-right: 1.2rem;
+    padding-left: 1.2rem;*/
+	 line-height: 3rem;
+
+}
+.navbar-light .navbar-nav .nav-link{color:#4d4d4b; font-weight:600;}
+.navbar-light .navbar-nav .nav-link:hover{color:#1ec2f3; }
+ .sign-in { padding:.5rem 2rem; font-weight:600; border:1.5px solid #1ec2f3; color:#1ec2f3;}
+.sign-in:hover{color:#fff; background:#1ec2f3;}
+
+
+
+/*.navbar-light .navbar-nav .active>.nav-link {color:#fdb740; font-weight:600; border-bottom:5px solid;}*/
+
+.navbar-light .navbar-nav .active .nav-link{ color:#1ec2f3; font-weight:600; }
+.navbar-light .navbar-nav .active .nav-link:after{
+    content: "";
+    bottom: -12px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #1ec2f3;
+    z-index: 2;
+	display: block; 
+    position: absolute;
+}
+.nav-item {position:relative; 	 margin-left:1rem; margin-right:1rem;}
+
+/************* Main banner *************/
+.hero-bg {width:100%; float:left}
+
+.hero-bg {  background-image: url(../images/hero_banner.jpg); background-repeat: no-repeat; background-size: cover;}
+.jumbotron {
+    max-width: 720px;
+    margin: 5rem auto 2rem auto;
+    z-index: 9999;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 5px 34px #cccc;
+}
+.jumbotron h1 {font-size:3rem; font-weight:700;}
+.jumbotron h1 span {color:#1ec2f3;}
+.jumbotron p {font-size:1.5rem; font-weight:600; color:#4d4d4b;}
+
+
+.brand-separator {margin-bottom:40px}
+.side-line {
+    display: inline-block;
+    border-top: 4px solid #d9e7eb;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ .triangle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    border-bottom: 4px solid #d9e7eb;
+    border-right: 4px solid #d9e7eb;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: -9px;
+}
+.register-btn  {background:#1ec2f3; color:#fff; font-weight:600;  padding: .7rem 2.2rem; text-transform:uppercase;
+    font-size: 1.2rem;
+    line-height: 2;
+    border-radius: 5rem }
+	.register-btn .fa {    margin-right: .5rem;}
+	.register-btn:hover {color:#fff;}
+.find-btn {font-size:1rem; text-decoration:underline; text-transform:uppercase;}
+
+
+
+
+
+/***** Footer*****/
+footer{border-top:1px solid #f1f1f1; margin-top:3rem; float:left; width:100%;} 
+footer p {font-size:.9rem;}
+
+
+/******************* Inner pages ******************/
+.inner-head {background:#f8f7f7; height:140px; margin-bottom:4rem; position:relative;  }
+.inner-head .headcover {flex:1;}
+.inner-head:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(248, 247, 247, 0);
+	border-top-color: #f8f7f7;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.grey-box {background:#fdfcfc; border-radius:.5rem; padding:2rem;}
+.grey-box .fa {font-size:24px;}
+.orange-higlight {background:#e8faff; border-radius:.5rem; padding:2rem;}
+.orange-higlight h2 {font-size: 1.4rem;  font-weight: 600;}
+.orange-higlight h2 span {color:#fdb740;}
+.orange-higlight h2 .fa {font-size:2rem;margin-right: .8rem; margin-top: .3rem;}
+.orange-higlight i.fa.fa-group {font-size: 3rem;}
+
+
+
+
+/** Product search ***/
+.lmsearch {text-align:center;}
+.lmsearch .orange-higlight { padding: 2rem;}
+.lmsearch h1{ font-size:2.2rem; font-weight:800; display:inline-block;}
+.lmsearch h1 span {color:#fdb740; text-transform:uppercase;}
+.lmsearch h2{ font-size:2rem; font-weight:800; text-transform:uppercase; display:inline-block; color:#121212;}
+.lmsearch h2 span {color:#1ec2f3;}
+.lmsearch .side-line {width:250px;}
+.lm-contentbar  h3{ color: #1ec2f3; text-transform: uppercase; font-weight: 700; font-size: 1rem;}
+
+/** Benefits ***/
+.benefits li {list-style:none; position:relative;}
+.benefits li:before {    
+    content: "\f058";
+    margin-left: 0;
+    color: #1ec2f3;
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    left: -35px;
+    top: 3px;
+    font-size: 20px;}
+
+    /*****Contact****/
+
+    .contactbox{
+        border-radius: 10px ;
+background-color: rgba(36, 183, 230, 0.07);
+padding:30px 35px 20px;
+min-height: 248px;
+border:2px solid transparent;
+display: block;
+color: #000;
+text-decoration: none;
+    }
+ 
+   .contactbox:hover  {
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 0 0;
+}
+       .contactbox:hover{
+        border:2px solid rgba(223, 114, 35, 1);
+       }
+      .contactbox img{
+        margin-bottom: 10px;
+      }
+    .contactrow{
+        display: table;
+margin: 0 auto;
+    }
+ .boxpink{
+background-color: rgba(230, 36, 36, 0.07);
+    }
+     .boxblue{
+background-color: rgba(98, 36, 230, 0.07);
+    }
+       .boxlightpink{
+background-color: rgba(230, 106, 36, 0.07);
+    }
+    .boxgray{
+background-color: rgba(40, 138, 38, 0.07);
+    }
+    .contact-single-head{
+        min-height: 348px;
+    }
+    .contat-form {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+    max-width: 667px;
+    width: 95%;
+    margin: -190px auto 50px;
+    position: relative;
+    z-index: 2;
+    padding: 56px 100px;
+}
+.contat-form label {
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.contat-form input, .contat-form textarea {
+    min-height: 55px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    box-shadow: 0 0 0 !important ;
+}
+.contat-form button.btn {
+    min-width: 130px;
+    width: auto;
+    margin-left: 15px;
+    font-weight: bold;
+    min-height: 46px;
+}
+
+.orangebtn{
+background: #FC9246;
+color: #fff;
+}
+.orangebtn:hover{
+background: #e7843e;
+}
+.graybtn{
+    background: #E8E8E8;
+    color: #A7A7A7;
+}
+.graybtn:hover{
+background: #b9b9b9;
+}
+/********************* Responsive css *****************/
+@media (max-width:360px){
+.navbar-toggler {
+padding: .25rem 0.3rem;}
+.register-btn { padding: .7rem 1.2rem; font-size: 1rem;}
+}
+
+@media (min-width: 1300px){
+.navbar, .top-header { padding: .3rem 8rem;}
+}
+
+@media (max-width:767px){
+.jumbotron { margin: 1rem;}
+.jumbotron h1 {font-size: 2rem; word-break: break-word;}
+.side-line {width: 100px;}
+.graph-wrap {padding: 1rem 1rem;}
+.lmsearch .orange-higlight { padding: 1rem;}
+.lmsearch .side-line { width: 130px;}
+.topmenu-space {text-align: center; width: 100%; padding:5px 0;}
+.lmsearch h1, .lmsearch h2{ font-size:1.4rem;}
+h1 {    font-size:16px;}
+ .contat-form {
+        padding: 30px;
+    margin: 0 auto;
+ }
+ .contact-single-head {
+    min-height: 140px;
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width:991px){
+.navbar-light .navbar-nav .active .nav-link:after{bottom:0;}
+.nav-item {margin-left: 0; margin-right: 0;}
+.navbar-expand-lg .navbar-nav .nav-link {padding:.5rem 0;}
+}
+
+@media screen and (min-width: 992px) and (max-width:1024px){
+.navbar-light .navbar-nav .active .nav-link:after{bottom:0;}
+.nav-item {margin-left: .5rem; margin-right: .5rem;}
+
+}
